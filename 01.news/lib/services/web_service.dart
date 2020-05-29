@@ -5,8 +5,8 @@ import 'package:news/utils/constants.dart';
 class WebService {
   var dio = new Dio();
 
-  Future<List<NewsArticle>> fetchHeadlinesByKeyword(String keyword) async {
-    final response = await dio.get(Constants.headlinesFor(keyword));
+  Future<List<NewsArticle>> fetchHeadlinesByCountry(String country) async {
+    final response = await dio.get(Constants.headlinesFor(country));
 
     if (response.statusCode == 200) {
       final result = response.data;
@@ -16,6 +16,7 @@ class WebService {
       throw Exception("Failled to get top news");
     }
   }
+
 
   Future<List<NewsArticle>> fetchTopHeadlines() async {
     String url = Constants.TOP_HEADLINES_URL;

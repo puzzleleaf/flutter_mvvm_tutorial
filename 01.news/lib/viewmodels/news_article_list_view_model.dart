@@ -13,12 +13,12 @@ class NewsArticleListViewModel with ChangeNotifier {
   LoadingStatus loadingStatus = LoadingStatus.searching;
   List<NewsArticleViewModel> articles = List<NewsArticleViewModel>();
 
-  void search(String keyword) async {
+  void topHeadlinesByCountry(String country) async {
     this.loadingStatus = LoadingStatus.searching;
     notifyListeners();
 
     List<NewsArticle> newsArticles =
-        await WebService().fetchHeadlinesByKeyword(keyword);
+        await WebService().fetchHeadlinesByCountry(country);
 
     this.articles = newsArticles
         .map((article) => NewsArticleViewModel(article: article))
@@ -33,7 +33,7 @@ class NewsArticleListViewModel with ChangeNotifier {
     notifyListeners();
   }
 
-  void populateTopHeadlines() async {
+  void topHeadlines() async {
 
     List<NewsArticle> newsArticles = await WebService().fetchTopHeadlines();
     notifyListeners();

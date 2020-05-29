@@ -1,3 +1,4 @@
+import 'package:intl/intl.dart';
 import 'package:news/models/news_article.dart';
 
 class NewsArticleViewModel {
@@ -19,5 +20,18 @@ class NewsArticleViewModel {
 
   String get url {
     return _newsArticle.url;
+  }
+
+  String get author {
+    return _newsArticle.author;
+  }
+
+  String get content {
+    return _newsArticle.content;
+  }
+
+  String get publishedAt {
+    final dateTime = DateFormat('yyyy-MM-ddTHH:mm:ssZ').parse(_newsArticle.publishedAt, true);
+    return DateFormat.yMMMMEEEEd('en-us').format(dateTime).toString();
   }
 }
