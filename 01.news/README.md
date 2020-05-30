@@ -1,16 +1,34 @@
-# news
+# Flutter News App (MVVM Study)
+Flutter News App - MVVM Architecture Study
+(Model, View, ViewModel)
 
-A new Flutter application.
+<img src="./readme/1.png" width="250"/> <img src="./readme/2.png" width="250"/> <img src="./readme/3.png" width="250"/> 
 
-## Getting Started
+### API
+NewsAPI
+* http://newsapi.org/
 
-This project is a starting point for a Flutter application.
+### Package
+Dio : A powerful Http client for Dart
+* https://pub.dev/packages/dio
 
-A few resources to get you started if this is your first Flutter project:
+Provider : A wrapper around InheritedWidget to make them easier to use and more reusable.
+* https://pub.dev/packages/provider
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Cached Network Image : A flutter library to show images from the internet and keep them in the cache directory.
+* https://pub.dev/packages/cached_network_image
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Intl : This package provides internationalization and localization facilities, including message translation, plurals and genders, date/number formatting and parsing, and bidirectional text.
+* https://pub.dev/packages/intl
+
+### Youtube
+[![Flutter News App ](./readme/youtube.png)](https://www.youtube.com/watch?v=pAhxtz491TA)
+
+
+[![Flutter News App ](./readme/youtube2.png)](https://www.youtube.com/watch?v=kS-Fa-nMRTs)
+
+
+### Reference
+
+Design
+* https://bit.ly/2zC1AnP
