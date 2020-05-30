@@ -22,10 +22,10 @@ Intl : This package provides internationalization and localization facilities, i
 * https://pub.dev/packages/intl
 
 ### Youtube
-[![Flutter News App ](./readme/youtube.png)](https://www.youtube.com/watch?v=pAhxtz491TA)
+[![Flutter News App ](./readme/youtube.png)](https://www.youtube.com/watch?v=7n2QprcdHMA)
 
 
-[![Flutter News App ](./readme/youtube2.png)](https://www.youtube.com/watch?v=kS-Fa-nMRTs)
+[![Flutter News App ](./readme/youtube2.png)](https://www.youtube.com/watch?v=cY9VMlxfV9Y)
 
 
 ### Reference
